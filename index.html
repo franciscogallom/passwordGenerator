@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas.</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+</head>
+
+<body>
+
+    <h1 class="header">Crea tu contraseña!</h1>
+
+	<div class="contenedor">
+		<form action="" class="app" id="app">
+			<div class="fila numero-caracteres">
+				<div class="col">
+					<label for="numero-caracteres">Cantidad de caracteres:</label>
+				</div>
+				<div class="col botones">
+					<div>
+						<button class="btn" id="btn-menos-uno"><i class="fas fa-minus"></i></button>
+					</div>
+					<div>
+						<input type="text" id="numero-caracteres" readonly value="12">
+					</div>
+					<div>
+						<button class="btn" id="btn-mas-uno"><i class="fas fa-plus"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="fila simbolos">
+				<div class="col">
+					<label for="simbolos">Incluir simbolos:</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila numeros">
+				<div class="col">
+					<label for="numeros">Incluir números:</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila mayusculas">
+				<div class="col">
+					<label for="mayusculas">Incluir mayúsculas:</label>
+				</div>
+				<div class="col">
+					<button class="btn" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+				</div>
+			</div>
+			<div class="fila generar">
+				<div class="col">
+					<button class="btn btn-generar" id="btn-generar">Generar <i class="fas fa-lock"></i></button>
+				</div>
+				<div class="col">
+					<input type="text" class="input-password" id="input-password" readonly value="r4nd0m-p4sSw07d-2020">
+				</div>
+			</div>
+			<div class="fila alerta">
+				<div class="col">
+					<div class="alerta-copiado" id="alerta-copiado">
+						<p><i class="fas fa-copy"></i> Texto copiado!</p>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="creditos">
+			<p>Desarrollado por Francisco Gallo M.</p>
+		</div>
+	</div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
